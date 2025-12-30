@@ -1,0 +1,179 @@
+/* Reset */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f2f5f9;
+  color: #333;
+}
+
+/* App Container */
+.App {
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+/* Heading */
+h1 {
+  font-size: 36px;
+  font-weight: 600;
+  color: #1a1a1a;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* Navbar-Like Welcome Section */
+.welcome {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.welcome strong {
+  color: #007bff;
+  margin-right: 12px;
+  font-size: 15px;
+}
+
+.welcome button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.welcome button:hover {
+  background-color: #0056b3;
+}
+
+/* Product Grid */
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 30px;
+}
+
+/* Product Card */
+.product-card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-image {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+  margin-bottom: 15px;
+  border-radius: 10px;
+}
+
+.product-card h3 {
+  margin: 10px 0 5px;
+  font-size: 20px;
+  color: #1a1a1a;
+}
+
+.product-card p {
+  color: #555;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+/* Input Fields */
+textarea,
+input[type='number'] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 8px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  transition: border-color 0.2s ease;
+}
+
+textarea:focus,
+input[type='number']:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+textarea {
+  min-height: 60px;
+  resize: vertical;
+}
+
+/* Buttons */
+button {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-top: 6px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+/* Info Text */
+.info {
+  color: #17a2b8;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+/* Review Section */
+.review-section {
+  text-align: left;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.review-section strong {
+  display: block;
+  margin-bottom: 10px;
+  color: #333;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.review-section ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 5px;
+}
+
+.review-section li {
+  background-color: #f8f9fa;
+  padding: 12px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 1.5;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+.review-section em {
+  font-weight: bold;
+  color: #007bff;
+}
